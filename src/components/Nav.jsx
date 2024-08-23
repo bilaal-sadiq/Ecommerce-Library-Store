@@ -5,7 +5,7 @@ import LibraryLogo from '../assets/Library.svg';
 const Nav = () => {
     return(
         <nav>
-            <div className="nav_container">
+            <div className="nav__container">
                 <a href="/">
                 <img src={LibraryLogo} alt="" className="logo" />
                 </a>
