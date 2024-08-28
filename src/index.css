@@ -32,6 +32,8 @@ nav {
 img {
   height: 100%;
   width: 100%;
+  max-height: 50vh;
+  padding: 20px;
 }
 
 p {
@@ -430,6 +432,7 @@ FEATURES
 .book__title {
   font-size: 20px;
   margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 .book__title--link {
