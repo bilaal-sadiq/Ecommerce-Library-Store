@@ -6,6 +6,10 @@ const Books = ({ books: intialBooks }) => {
 
     function filterBooks(filter) {
         console.log(filter)
+        if (filter === 'LOW_TO_HIGH') {
+            setBooks(books.slice().sort((a, b) => (a.salePrice || a.originalPrice) - (b.salePrice || b.originalPrice)))
+            
+        }
     }
   return (
     <div id="books__body">
@@ -20,7 +24,7 @@ const Books = ({ books: intialBooks }) => {
                 <select id="filter" defaultValue="DEFAULT" onChnage={(event) => filterBooks(event.target.value)}>
                     <option value="DEFAULT" selected disabled>Sort</option>
                     <option value="LOW_TO_HIGH">Price, Low to High</option>
-                    <option value="HIGH_TO_LOW">Price, High to Low</option>
+                    <option value="HIGH_TO_LOW">Price, High to Low </option>
                     <option value="RATING">Rating</option>
                 </select>
               </div>
