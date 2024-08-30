@@ -21,7 +21,7 @@ const Books = ({ books: intialBooks }) => {
                 <h2 className="section__title books__header--title">
                   All Books
                 </h2>
-                <select id="filter" defaultValue="DEFAULT" onChnage={(event) => filterBooks(event.target.value)}>
+                <select id="filter" defaultValue="DEFAULT" onChange={(event) => filterBooks(event.target.value)}>
                     <option value="DEFAULT" selected disabled>Sort</option>
                     <option value="LOW_TO_HIGH">Price, Low to High</option>
                     <option value="HIGH_TO_LOW">Price, High to Low </option>
