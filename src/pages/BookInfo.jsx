@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import Rating from "../components/UI/Rating";
 import Price from "../components/UI/Price";
 import Book from "../components/UI/Book";
 
-const BookInfo = ({ books, addToCart }) => {
+const BookInfo = ({ books, addToCart, cart }) => {
   const { id } = useParams();
   const book = books.find((book) => +book.id === +id);
+
 
   return (
     <div id="books__body">
@@ -50,7 +51,10 @@ const BookInfo = ({ books, addToCart }) => {
                     consectetur dicta placeat eveniet maiores in, amet sapiente.
                   </p>
                 </div>
-                <button className="btn" onClick={() => addToCart(book)}>Add to Cart</button>
+                 <button className="btn" 
+                  onClick={() => addToCart(book)}>
+                    Add to Cart
+                    </button>
               </div>
             </div>
           </div>
