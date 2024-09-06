@@ -3,8 +3,7 @@ import React from "react";
 import Book from "./UI/Book";
 import { books } from "../data";
 
-const Featured = () => {
-  function getFiveStarBooks() {}
+const Featured = (id) => {
   return (
     <section id="features">
       <div className="container">
