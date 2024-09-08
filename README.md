@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+This is my e-commerce library store, which is built with JavaScript, React, and CSS.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+One of the biggest challenges I'm facing with this object is turning the "Add to cart" button into "Checkout" once you've added your items to the cart. I keep receiving the same error, which says 
+
+Cannot read properties of undefined (reading 'find'). I investigated the issue and saw that it was in one of my functions, and I was passing down the argument for the button to change when clicked. 
+*** Insert Image ***
+
+I was stuck and was unable to find a solution until....
+
 
 ## Available Scripts
 
