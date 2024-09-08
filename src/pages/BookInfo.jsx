@@ -50,7 +50,7 @@ const BookInfo = ({ books, addToCart, cart }) => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Explicabo fuga voluptate, facere vitae in veniam
                     dignissimos. Maiores rerum vel voluptate nulla. Iste
-                    consectetur dicta placeat eveniet maiores in, amet sapiente.
+                    consectetur dicta placeat eveniet maiores in, amet sapiente. test
                   </p>
                   <p className="book__summary--para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
