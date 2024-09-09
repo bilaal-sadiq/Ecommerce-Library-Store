@@ -7,16 +7,14 @@ import Book from "../components/UI/Book";
 const BookInfo = ({ books, addToCart, cart }) => {
   const { id } = useParams();
   const book = books.find((book) => +book.id === +id);
-  
 
   function addBookToCart(book) {
-    addToCart(book)
+    addToCart(book);
   }
 
   function bookInCart() {
     return cart.find((book) => book.id === +id);
   }
-
 
   return (
     <div id="books__body">
@@ -50,7 +48,8 @@ const BookInfo = ({ books, addToCart, cart }) => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Explicabo fuga voluptate, facere vitae in veniam
                     dignissimos. Maiores rerum vel voluptate nulla. Iste
-                    consectetur dicta placeat eveniet maiores in, amet sapiente. test
+                    consectetur dicta placeat eveniet maiores in, amet sapiente.
+                    test
                   </p>
                   <p className="book__summary--para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,19 +58,15 @@ const BookInfo = ({ books, addToCart, cart }) => {
                     consectetur dicta placeat eveniet maiores in, amet sapiente.
                   </p>
                 </div>
-                {
-                  bookInCart() ? (
-                    <Link to={`/cart`} className="book__link"> 
-                  <button className="btn">Checkout </button>
+                {bookInCart() ? (
+                  <Link to={`/cart`} className="book__link">
+                    <button className="btn">Checkout </button>
                   </Link>
                 ) : (
-                  <button className="btn" 
-                    onClick={() => addBookToCart(book)}>
-                      Add to Cart
-                      </button>
-                      )
-                }
-                 
+                  <button className="btn" onClick={() => addBookToCart(book)}>
+                    Add to Cart
+                  </button>
+                )}
               </div>
             </div>
           </div>
