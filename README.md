@@ -5,7 +5,7 @@ One of the biggest challenges I'm facing with this object is turning the "Add to
 Cannot read properties of undefined (reading 'find'). I investigated the issue and saw that it was in one of my functions, and I was passing down the argument for the button to change when clicked. 
 *** Insert Image ***
 
-I was stuck and was unable to find a solution until....
+I was stuck and could not find a solution until I realised I wasn't passing down the cart as a prop in my App.js file. This may seem like a minor issue to some developers. However, this made me realise my other weaknesses in React, such as Props, Rerednding process and event loops, which I worked on my creating personal projects, which led me to become a better developer.   
 
 
 ## Available Scripts
