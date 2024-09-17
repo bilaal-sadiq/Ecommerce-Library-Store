@@ -290,7 +290,7 @@ HIGHLIGHTS
 
 */
 
-#highlights {
+/* #highlights {
   position: relative;
   max-width: 100vw;
 }
@@ -353,6 +353,84 @@ HIGHLIGHTS
   font-size: 20px;
   margin-bottom: 16px;
   text-align: center;
+} */
+
+
+#highlights {
+  width: 100%;
+}
+
+.section__title {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.highlight__list {
+  width: 100%;
+  max-width: 900px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  width: calc(100% / 3);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.highlight__icon {
+  width: 90px;
+  height: 90px;
+  border: solid 1px #c9c9c9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #7342d6;
+}
+
+.highlight__title {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.highlight__description {
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+#highlights {
+  position: relative;
+  max-width: 100vw;
+}
+
+#highlights:after,
+#highlights:before {
+  background: url("./assets/wave.svg");
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#highlights:before {
+  top: 1px;
+  transform: translateY(-100%);
+}
+
+#highlights:after {
+  bottom: 1px;
+  transform: translateY(100%) rotate(180deg); 
 }
 
 /* 
